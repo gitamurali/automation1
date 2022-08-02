@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  tasks:
+    - name: creating a new file using ansible
+      shell: touch firstfile.txt
+
+    - name: adding data into my file
+      shell: echo "This awsome, I created my first ansible playbook" > firstfile.txt
+    
+    - name: adding next line to the file
+      shell: echo "This is my second line" >firstfile.txt
