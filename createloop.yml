@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks:
+    - name: creating files
+      command: touch "{{ item }}"
+      with_items:
+        - file1.txt
+        - file2.txt

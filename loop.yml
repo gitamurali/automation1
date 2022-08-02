@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+    - name: creating an ansible playbook with loop or iteration
+      command: touch "{{ items }}"
+      with_items: 
+         - file1.txt
+         - file2.txt
+         - file3.txt

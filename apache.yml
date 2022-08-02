@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  tasks:
+    - name: installing apache using ansible playbook
+      shell: sudo yum install httpd -y
+
+    - name: start the apache
+      shell: sudo systemctl start httpd
+
+    - name: enable the apache
+      shell: sudo systemctl enable httpd
+
+
+
+
+ 
+
+      

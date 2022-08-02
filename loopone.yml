@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+    - name: creating ten files
+      command: touch "{{items}}"
+      with_items:
+        - file1.txt
+        - file2.txt
+        - file3.txt
+
